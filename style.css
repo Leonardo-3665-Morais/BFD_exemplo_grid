@@ -44,3 +44,70 @@ body {
   margin: 0;
   padding: 0;
 }
+ header {
+    background-color: rgb(41, 133, 156);
+    padding: var(--espaco-xs);
+ }
+
+ nav a{
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 30px;
+ }
+
+ .layout-wrapper{
+  display: grid;
+  grid-template-columns:1fr ;
+  gap: var(--espaco-lg);
+  max-width:  1200px;
+  margin: 0 auto;
+  padding: var(--espaco-md);
+  align-items: start;
+
+ }
+
+ article, aside, .edu-box{
+  background: var(--cor-fundo);
+  padding: var(--espaco-sm);
+  border: 1px solid var(--cor-borda);
+  border-radius:  8px;
+  margin-bottom:  var(--espaco-md);
+ }
+
+ .edu-box{
+  border-left: 4px solid var(--cor-primaria);
+  background: #a5f9ff;
+ }
+
+ .info-box{
+  border-left: 4px solid var(--cor-primaria);
+  background: #a5f9ff;
+  padding:var(--espaco-sm) ;
+ }
+
+ a{
+  color: var(--cor-primaria-houver);
+ }
+
+ footer{
+  background: var(--cor-texto) ;
+  color: var(--cor-fundo);
+  text-align: center;
+  padding: var(--espaco-sm);
+ }
+
+ img{
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--cor-texto);
+  justify-content: center
+
+ }
+
+ @media  screen and (min-width:768px){
+  .layout-wrapper{
+    grid-template-columns: 2fr 1fr;
+  }
+  
+ }
