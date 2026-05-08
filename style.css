@@ -149,3 +149,9 @@ input:user-invalid{
 #contact-form:focus-within{
   background: var(--cor-foco);
 }
+
+.form-actions{
+  display: grid;
+  grid-auto-flow: column;
+  gap: var(--espaco-sm);
+}
