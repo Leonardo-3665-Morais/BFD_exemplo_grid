@@ -10,7 +10,7 @@
   --cor-texto: #1f2937;
   --cor-fundo: #f9fafb;
   --cor-fundo-card: #ffffff;
-  --cor-primaria: #0d9488;
+  --cor-primaria:#391480 ;
   --cor-primaria-hover: #0f766e;
   --cor-borda: #9ca3af;
   --cor-erro: #b91c1c;
@@ -39,13 +39,14 @@ body {
   font-family: var(--fonte-principal);
   font-size: var(--tam-base);
   line-height: 1.6;
-  color: var(--cor-texto);
+  color: rgb(0, 0, 0);
   background-color: var(--cor-fundo);
   margin: 0;
   padding: 0;
+  background-image: linear-gradient(to right, rgb(63, 16, 82), rgb(141, 38, 119) );
 }
  header {
-    background-color: rgb(41, 133, 156);
+    background-image: linear-gradient(to right,rgb(44, 29, 99), rgb(17, 0, 24)  );
     padding: var(--espaco-xs);
  }
 
@@ -64,6 +65,7 @@ body {
   margin: 0 auto;
   padding: var(--espaco-md);
   align-items: start;
+  
 
  }
 
@@ -77,13 +79,15 @@ body {
 
  .edu-box{
   border-left: 4px solid var(--cor-primaria);
-  background: #a5f9ff;
+  background: #ffffff;
  }
 
  .info-box{
   border-left: 4px solid var(--cor-primaria);
-  background: #a5f9ff;
+  background: #ffffff;
   padding:var(--espaco-sm) ;
+  
+  border-radius: 8px;
  }
 
  a{
@@ -91,10 +95,11 @@ body {
  }
 
  footer{
-  background: var(--cor-texto) ;
+  background-image: linear-gradient(to right, rgb(17, 0, 24), rgb(44, 29, 99) );
   color: var(--cor-fundo);
   text-align: center;
   padding: var(--espaco-sm);
+  
  }
 
  img{
@@ -111,3 +116,36 @@ body {
   }
   
  }
+
+ p, h2, h1, h3{
+  text-align: center;
+ }
+ 
+ /* DIA 2:*/
+.form-group{
+  margin-bottom: var(--espaco-sm);
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 10px;
+}
+
+label{
+  justify-self: end;
+  align-self: center;
+  
+}
+
+input, select, textarea{
+  border: 2px solid var(--cor-borda);
+  border-radius: 8px;
+  padding: var(--espaco-sm);
+}
+/* marca como invalido somente apos o usuario escerver */
+input:user-invalid{
+  border: 2px solid red;
+  background: #ffe6e6;
+}
+
+#contact-form:focus-within{
+  background: var(--cor-foco);
+}
